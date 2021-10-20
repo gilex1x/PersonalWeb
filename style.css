@@ -45,6 +45,8 @@ a{
 .navigation-items{
     display: flex;
     justify-content: space-around;
+}
+.navigation-items a{
     color: var(--white);
 }
 .navigation-items a:visited{
@@ -138,6 +140,7 @@ section{
 }
 .contact a{
     font-size: 36px;
+    color: var(--black);
 }
 .icons-container i:hover{
     color: var(--dark-blue);
