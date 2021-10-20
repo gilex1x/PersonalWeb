@@ -45,6 +45,7 @@ a{
 .navigation-items{
     display: flex;
     justify-content: space-around;
+    color: var(--white);
 }
 .navigation-items a:visited{
     color: var(--white);
