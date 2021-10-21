@@ -88,8 +88,11 @@ section{
 }
 
 .proyects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     text-align: center;
-    align-items: center;
     background: var(--dark-blue);
     color: var(--white);
     border-right: solid 5px var(--salmon);
