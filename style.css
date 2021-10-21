@@ -1,9 +1,10 @@
 :root{
     --black:  #17202A;
-    --dark-blue:  #154360 ;
-    --blue: #4b6584;
+    --dark-blue:  #0e1630;
+    --blue: #808dad;
+    --salmon: #eb4a4a;
     --grey-bg: #dfe6e9;
-    --white: #EAECEE ;
+    --white: #fff;
 }
 ::-webkit-scrollbar {
     width: 8px;     /* Tamaño del scroll en vertical */
@@ -15,7 +16,7 @@ body{
     margin:0px;
     padding: 0;
     box-sizing: border-box;
-    background: var(--grey-bg);
+    background: var(--dark-blue);
     color: var(--black);
     font-family: 'Ubuntu', sans-serif;
     font-size: 24px;
@@ -28,7 +29,7 @@ h2{
 }
 
 header{
-    background: var(--black);
+    background: var(--dark-blue);
     color: var(--white);
     position: fixed;
     width: 100%;
@@ -52,6 +53,10 @@ a{
 .navigation-items a:visited{
     color: var(--white);
 }
+.navigation-items a:hover{
+    color: var(--salmon);
+    text-decoration: underline;
+}
 li{
     list-style: none;
     font-size: 20px;
@@ -61,17 +66,23 @@ section{
     height: 100vh;
 }
 
+
+
 .hero{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 0px 24px;
+    color: var(--white);
 }
+
 
 .hero-image{
     display: flex;
     align-items: center;
-
+}
+.hero-image img{
+    border-bottom-left-radius: 20px;
 }
 .hero-text{
     width: 35%;
@@ -85,10 +96,12 @@ section{
     color: var(--white);
 }
 
+
+
 .skills{
     display: flex;
     justify-content: space-around;
-    
+    color: var(--white);
 }
 
 .skills h2{
@@ -125,12 +138,17 @@ section{
     border-radius: 8px;
     color: var(--black);
 }
+.videos a:hover{
+    background-color: var(--blue);
+    color: var(--white);
+}
 
 .contact{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    color: var(--white);
 }
 
 .icons-container{
@@ -138,13 +156,13 @@ section{
     justify-content: space-evenly;
     padding: 20px;
 }
-.contact a{
+.contact i{
     font-size: 36px;
-    color: var(--black);
+    color: var(--white);
 }
 .icons-container i:hover{
-    color: var(--dark-blue);
+    color: var(--salmon);
 }
 .icons-container a:visited{
-    color: var(--black);
+    color: var(--white);
 }
