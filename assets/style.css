@@ -280,7 +280,7 @@ iframe{
     }
 
     .skills{
-        display: block;
+        flex-direction:column;
     }
 
     .skills li{
