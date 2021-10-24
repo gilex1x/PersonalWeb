@@ -258,7 +258,9 @@ iframe{
     .hero-text{
        width: 100%;
     }
-    
+    .hero-text h1{
+        font-size: 40px;
+    }
     iframe{
         margin: 20px 0;
         width: 250px;
