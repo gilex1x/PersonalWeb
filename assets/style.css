@@ -256,14 +256,9 @@ iframe{
         font-size: 16px;
     }
     .hero-text{
-        width: 100%;
+       width: 100%;
     }
-
-    .hero-text h1{
-        text-align: right;
-    }
-
-
+    
     iframe{
         margin: 20px 0;
         width: 250px;
@@ -277,4 +272,14 @@ iframe{
     .skills li{
         margin-bottom:8px;
     }
+
+    .proyects-cards a{
+    background-color: var(--dark-blue2);
+    color: var(--blue);
+    border-radius: 20px;
+    text-align: center;
+    width: 350px;
+    height: 450px;
+    padding: 12px;
+}
 }
