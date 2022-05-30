@@ -1,134 +1,177 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Gilberto Santamaria Frontend Developer" />
     <title>Gilberto|Dev</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./icons-web-v1.0/style.css" />
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/style.css" />
     <script src="./assets/index.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <label class="hamburguer-menu" id="menu">
-                <i class="icon-menu"></i>
-            </label>
-            <ul class="navigation-items" id="nav">
-                <li>
-                    <a href="#hero">Inicio</a>
-                </li>
-                <li>
-                    <a href="#proyects"> Proyectos</a>
-                </li>
-                <li>
-                    <a href="#skills">Habilidades</a>
-                </li>
-                <li>
-                    <a href="#videos">videos</a>
-                </li>
-                <li>
-                    <a href="#contact">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+      <nav>
+        <label class="hamburguer-menu" id="menu">
+          <i class="icon-menu"></i>
+        </label>
+        <ul class="navigation-items" id="nav">
+          <li>
+            <a href="#hero">Inicio</a>
+          </li>
+          <li>
+            <a href="#proyects"> Proyectos</a>
+          </li>
+          <li>
+            <a href="#skills">Habilidades</a>
+          </li>
+          <li>
+            <a href="#videos">videos</a>
+          </li>
+          <li>
+            <a href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
+      <section class="hero" id="hero">
+        <div class="hero-text">
+          <h1>Gilberto Santamaria</h1>
+          <p>
+            Soy Front-end developer y me gustan los retos que pongan a prueba
+            mis habilidades.
+          </p>
+          <p>¡No a los div genéricos, si  al HTML semántico!</p>
+        </div>
+        <div class="hero-button">
+          <a href="#contact">CONTACTAME</a>
+        </div>
+      </section>
 
-        <section class="hero" id="hero">
-            <div class="hero-text">
-                <h1>Gilberto Santamaria</h1>
-                <p>Soy Front-end developer y me gustan los retos que pongan a prueba mis habilidades.</p>
-                <p>¡No a los div genéricos, si  al HTML semántico!</p>
-            </div>
-            <div class="hero-button">
-                <a href="#contact">CONTACTAME</a>
-            </div>
-        </section>
+      <section class="proyects" id="proyects">
+        <h2>Proyectos</h2>
+        <div class="proyects-cards slidetrack">
+          <a href="https://google.gildev.xyz/" target="blank">
+            <img src="./assets/proyecto1.jpeg" alt="imagen proyecto1" loading="lazy" />
+            <h3>Google layout clon</h3>
+            <p>Clon del main layout de Google hecho con HTML y CSS</p>
+          </a>
+          <a href="https://facelook.gildev.xyz/" target="blank">
+            <img src="./assets/proyecto2.jpeg" alt="imagen proyecto2" loading="lazy"/>
+            <h3>Facebook old login</h3>
+            <p>Clon del anterior Login de facebook, relizado con HTML y CSS</p>
+          </a>
+          <a href="https://beer.gildev.xyz/" target="blank">
+            <img
+              loading="lazy"
+              src="./assets/proyecto3.jpeg"
+              alt="imagen proyecto3"
+            />
+            <h3>Filtro cervezas - Prueba tecnica</h3>
+            <p>Solución de una prueba tecnica usando handlebars y SASS</p>
+          </a>
+          <a href="https://simon.gildev.xyz/" target="blank">
+            <img
+              loading="lazy"
+              src="./assets/proyecto4.jpeg"
+              alt="imagen proyecto3"
+            />
+            <h3>Juego de simon dice</h3>
+            <p>Un simple juego realizado con CSS, HMTL y Javascript vanilla</p>
+          </a>
+          <a href="https://pokedux.gildev.xyz/" target="blank">
+            <img
+              loading="lazy"
+              src="./assets/proyecto5.jpeg"
+              alt="imagen proyecto3"
+            />
+            <h3>Pokedex con PokeApi</h3>
+            <p>Sitio web realizado con React, Redux y Redux-Saga</p>
+          </a>
+        </div>
+      </section>
 
-        <section class="proyects" id="proyects">
-            <h2>Proyectos</h2>
-            <div class="proyects-cards slidetrack">
-                <a href="https://google.gildev.xyz/" target="blank">
-                    <img src="./assets/proyecto1.jpeg" alt="imagen proyecto1"/>
-                    <h3>Google layout clon</h3>
-                    <p>Clon del main layout de Google hecho con HTML y CSS</p>
-                </a>
-                <a href="https://facelook.gildev.xyz/" target="blank">
-                    <img src="./assets/proyecto2.jpeg" alt="imagen proyecto2"/>
-                    <h3>Facebook old login</h3>
-                    <p>Clon del anterior Login de facebook, relizado con HTML y CSS</p>
-                </a>
-                <a href="https://beer.gildev.xyz/" target="blank">
-                    <img loading="lazy" src="./assets/proyecto3.jpeg" alt="imagen proyecto3" />
-                    <h3>Filtro cervezas - Prueba tecnica</h3>
-                    <p>Solución de una prueba tecnica usando handlebars y SASS</p>
-                </a>
-                <a href="https://simon.gildev.xyz/" target="blank">
-                    <img loading="lazy" src="./assets/proyecto4.jpeg" alt="imagen proyecto3" />
-                    <h3>Juego de simon dice</h3>
-                    <p>Un simple juego realziado con CSS, HMTL y Javascript vanilla</p>
-                </a>
-            </div>
-        </section>
+      <section class="skills" id="skills">
+        <h2>Habilidades</h2>
+        <ul class="skills-list">
+          <li></li>
+          <li>
+            <i class="icon-html-five2"></i>Desarrollo de sitios web con
+            <strong> HTML5, CSS3 Y Javascript</strong>
+          </li>
+          <li>
+            ✅Uso de estandares de la industria como ECMASCRIPT 6+ y HTML
+            semantico.
+          </li>
+          <li>
+            📦Desarrollo de aplicaciones web usando <strong>ReactJs</strong> y
+            sus distintas librerias.
+          </li>
+          <li>
+            <i class="icon-wordpress"></i>Montaje de sitios web con WordPresss
+          </li>
+          <li></li>
+        </ul>
+      </section>
 
-        <section class="skills" id="skills">
-            <h2>Habilidades</h2>
-            <ul class="skills-list">
-                <li></li>
-                <li>
-                    <i class="icon-html-five2"></i>Desarrollo de sitios web con <strong> HTML5, CSS3 Y
-                        Javascript</strong>
-                </li>
-                <li>
-                    ✅Uso de estandares de la industria como ECMASCRIPT 6+ y HTML semantico.
-                </li>
-                <li>
-                    📦Desarrollo de aplicaciones web usando <strong>ReactJs</strong> y sus distintas librerias.
-                </li>
-                <li>
-                    <i class="icon-wordpress"></i>Montaje de sitios web con WordPresss
-                </li>
-                <li></li>
-            </ul>
-        </section>
+      <section class="videos" id="videos">
+        <div class="videos-container">
+          <iframe
+            width="460"
+            height="315"
+            loading="lazy"
+            src="https://www.youtube.com/embed/eimvdFGB1oQ"
+            frameborder="0"
+            allowfullscreen
+            title="Video del canal de Gilberto"
+            class="video1"
+          ></iframe>
+          <iframe
+            width="460"
+            height="315"
+            loading="lazy"
+            src="https://www.youtube.com/embed/O5Cu-HFh5wM"
+            frameborder="0"
+            allowfullscreen
+            title="Video del canal de Gilberto"
+            class="video2"
+          ></iframe>
+        </div>
+        <a
+          href="https://www.youtube.com/channel/UCZF_yAHof7TYUzmX4fTas3g"
+          target="blank"
+          >VER MÁS<br /><i class="icon-youtube"></i
+        ></a>
+      </section>
 
-        <section class="videos" id="videos">
-            <div class="videos-container">
-                <iframe width="460" height="315" loading="lazy" src="https://www.youtube.com/embed/eimvdFGB1oQ"
-                    frameborder="0" allowfullscreen title="Video del canal de Gilberto" class="video1"></iframe>
-                <iframe width="460" height="315" loading="lazy" src="https://www.youtube.com/embed/O5Cu-HFh5wM"
-                    frameborder="0" allowfullscreen title="Video del canal de Gilberto" class="video2"></iframe>
-            </div>
-            <a href="https://www.youtube.com/channel/UCZF_yAHof7TYUzmX4fTas3g" target="blank">VER MÁS<br /><i
-                    class="icon-youtube"></i></a>
-        </section>
-
-        <section class="contact" id="contact">
-            <h2>Trabajemos Juntos!</h2>
-            <div class="icons-container">
-                <a href="https://www.linkedin.com/in/gilberto-santamaria-724a97150/" target="blank">
-                    <i class="icon-linkedin"></i>
-                </a>
-                <a href="https://twitter.com/zGilbertoS" target="blank">
-                    <i class="icon-twitter"></i>
-                </a>
-                <a href="https://github.com/gilex1x" target="blank">
-                    <i class="icon-github"></i>
-                </a>
-                <a href="https://t.me/GilbertSC" target="blank">
-                    <i class="icon-telegram"></i>
-                </a>
-            </div>
-        </section>
-
+      <section class="contact" id="contact">
+        <h2>Trabajemos Juntos!</h2>
+        <div class="icons-container">
+          <a
+            href="https://www.linkedin.com/in/gilberto-santamaria-724a97150/"
+            target="blank"
+          >
+            <i class="icon-linkedin"></i>
+          </a>
+          <a href="https://twitter.com/zGilbertoS" target="blank">
+            <i class="icon-twitter"></i>
+          </a>
+          <a href="https://github.com/gilex1x" target="blank">
+            <i class="icon-github"></i>
+          </a>
+          <a href="https://t.me/GilbertSC" target="blank">
+            <i class="icon-telegram"></i>
+          </a>
+        </div>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
