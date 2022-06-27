@@ -127,6 +127,9 @@ section{
 }
 
 .proyects-cards a h3{
+    color: var(--white);
+}
+.proyects-cards a h3:hover{
     color: var(--salmon);
 }
 
