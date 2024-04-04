@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="./icons-web-v1.0/style.css" />
     <link rel="stylesheet" href="./assets/style.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script type='application/ld+json'>
+<script type="application/ld+json">
 {
       "@context": "https://schema.org",
       "@type": "Person",
@@ -56,9 +56,10 @@
 </script>
     <script
       async
+      defer
       src="https://www.googletagmanager.com/gtag/js?id=G-YBBVGFWLL4"
     ></script>
-    <script>
+    <script defer>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
@@ -78,19 +79,19 @@
         </label>
         <ul class="navigation-items" id="nav">
           <li>
-            <a href="#hero">Inicio</a>
+            <a href="#hero" aria-label="Ir al inicio">Inicio</a>
           </li>
           <li>
-            <a href="#proyects"> Proyectos</a>
+            <a href="#proyects" aria-label="Ir a proyectos"> Proyectos</a>
           </li>
           <li>
-            <a href="#skills">Habilidades</a>
+            <a href="#skills" aria-label="Ir al habilidades">Habilidades</a>
           </li>
           <li>
-            <a href="#videos">videos</a>
+            <a href="#videos" aria-label="Ir al videos">videos</a>
           </li>
           <li>
-            <a href="#contact">Contacto</a>
+            <a href="#contact" aria-label="Ir al contacto">Contacto</a>
           </li>
         </ul>
       </nav>
@@ -113,7 +114,7 @@
       <section class="proyects" id="proyects">
         <h2>Proyectos</h2>
         <div class="proyects-cards slidetrack">
-          <a href="https://google.gildev.xyz/" target="blank">
+          <a href="https://google.gildev.xyz/" target="blank" aria-label="ver proyecto">
             <img
               src="./assets/proyecto1.jpeg"
               alt="imagen proyecto1"
@@ -131,7 +132,7 @@
             <h3>Facebook old login</h3>
             <p>Clon del anterior Login de facebook, relizado con HTML y CSS</p>
           </a>
-          <a href="https://beer.gildev.xyz/" target="blank">
+          <a href="https://beer.gildev.xyz/" target="blank" aria-label="ver proyecto">
             <img
               loading="lazy"
               src="./assets/proyecto3.jpeg"
@@ -140,7 +141,7 @@
             <h3>Filtro cervezas - Prueba tecnica</h3>
             <p>Solución de una prueba tecnica usando handlebars y SASS</p>
           </a>
-          <a href="https://simon.gildev.xyz/" target="blank">
+          <a href="https://simon.gildev.xyz/" target="blank" aria-label="ver proyecto">
             <img
               loading="lazy"
               src="./assets/proyecto4.jpeg"
@@ -149,7 +150,7 @@
             <h3>Juego de simon dice</h3>
             <p>Un simple juego realizado con CSS, HMTL y Javascript vanilla</p>
           </a>
-          <a href="https://pokedux.gildev.xyz/" target="blank">
+          <a href="https://pokedux.gildev.xyz/" target="blank" aria-label="ver proyecto">
             <img
               loading="lazy"
               src="./assets/proyecto5.jpeg"
@@ -158,7 +159,7 @@
             <h3>Pokedex con PokeApi</h3>
             <p>Sitio web realizado con React, Redux y Redux-Saga</p>
           </a>
-          <a href="https://rickmorty.gildev.xyz/" target="blank">
+          <a href="https://rickmorty.gildev.xyz/" target="blank" aria-label="ver proyecto">
             <img
               loading="lazy"
               src="./assets/proyecto6.jpeg"
@@ -232,17 +233,15 @@
           <a
             href="https://www.linkedin.com/in/gilberto-santamaria-724a97150/"
             target="blank"
+            aria-label="ver perfil de linkedin"
           >
             <i class="icon-linkedin"></i>
           </a>
-          <a href="https://twitter.com/zGilbertoS" target="blank">
+          <a href="https://twitter.com/zGilbertoS" target="blank" aria-label="ver perfil de Twitter">
             <i class="icon-twitter"></i>
           </a>
-          <a href="https://github.com/gilex1x" target="blank">
+          <a href="https://github.com/gilex1x" target="blank" aria-label="ver perfil de Github">
             <i class="icon-github"></i>
-          </a>
-          <a href="https://t.me/GilbertSC" target="blank">
-            <i class="icon-telegram"></i>
           </a>
         </div>
       </section>
