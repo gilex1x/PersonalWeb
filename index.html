@@ -10,7 +10,7 @@
     />
     <meta
       name="keywords"
-      content="frontend,front end, web developer, developer, react, reactjs"
+      content="frontend,front end, web developer, developer, react, reactjs, nodejs, fullstack"
     />
     <meta name="robots" content="index, follow" />
     <title>Gilberto|Dev</title>
@@ -21,39 +21,9 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./icons-web-v1.0/style.css" />
+    <link rel="stylesheet" href="./assets/iconsFont-v1.0/style.css" />
     <link rel="stylesheet" href="./assets/style.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script type="application/ld+json">
-{
-      "@context": "https://schema.org",
-      "@type": "Person",
-       "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Km2 Chia-Cota",
-          "addressLocality": "Chia",
-          "addressRegion": "Cundinamarca",
-          "postalCode": "250001",
-          "addressCountry": "Colombia"
-      },
-      "colleague": [
-        "https://platzi.com/p/Gilberto-S/"],
-      "email": "gilbertosa099@gmail.com",
-      "image": "",
-      "jobTitle": "Front end",
-      "name": "Gilberto Santamaria",
-      "alumniOf": "",
-      "birthPlace": "Chia",
-      "birthDate": "2000-03-06",
-      "height": "160cm",
-      "gender": "male",
-      "memberOf": "Plataforma PAO",
-      "nationality": "Colombian",
-      "telephone": "123456789",
-      "url": "https://gildev.xyz/",
-	    "sameAs" : ["https://www.linkedin.com/in/gilberto-santamaria-724a97150/"]
-    }
-</script>
     <script
       async
       defer
@@ -68,14 +38,13 @@
 
       gtag("config", "G-YBBVGFWLL4");
     </script>
-    <script src="./assets/index.js" defer></script>
   </head>
 
   <body>
     <header>
-      <nav>
-        <label class="hamburguer-menu" id="menu">
-          <i class="icon-menu"></i>
+      <nav class="navigation-container">
+        <label class="navigation-menu-icon" id="menu">
+          <i class="icon-embed2"></i>
         </label>
         <ul class="navigation-items" id="nav">
           <li>
@@ -101,8 +70,7 @@
         <div class="hero-text">
           <h1>Gilberto Santamaria</h1>
           <p>
-            Soy Front-end developer y me gustan los retos que pongan a prueba
-            mis habilidades.
+            Frontend developer con 3 años de experiencia en el sector. Me encanta trabajar en proyectos que pongan a prueba mis habilidades y me lleven a prender cada día más.
           </p>
           <p>¡No a los div genéricos, si  al HTML semántico!</p>
         </div>
@@ -120,8 +88,10 @@
               alt="imagen proyecto1"
               loading="lazy"
             />
-            <h3>Google layout clon</h3>
-            <p>Clon del main layout de Google hecho con HTML y CSS</p>
+            <div class="proyects-cards_content">
+              <h3>Google layout clon</h3>
+              <p>Clon del main layout de Google hecho con HTML y CSS</p>
+            </div>
           </a>
           <a href="https://facelook.gildev.xyz/" target="blank">
             <img
@@ -197,36 +167,6 @@
         </ul>
       </section>
 
-      <section class="videos" id="videos">
-        <div class="videos-container">
-          <iframe
-            width="460"
-            height="315"
-            loading="lazy"
-            src="https://www.youtube.com/embed/eimvdFGB1oQ"
-            frameborder="0"
-            allowfullscreen
-            title="Video del canal de Gilberto"
-            class="video1"
-          ></iframe>
-          <iframe
-            width="460"
-            height="315"
-            loading="lazy"
-            src="https://www.youtube.com/embed/O5Cu-HFh5wM"
-            frameborder="0"
-            allowfullscreen
-            title="Video del canal de Gilberto"
-            class="video2"
-          ></iframe>
-        </div>
-        <a
-          href="https://www.youtube.com/channel/UCZF_yAHof7TYUzmX4fTas3g"
-          target="blank"
-          >VER MÁS<br /><i class="icon-youtube"></i
-        ></a>
-      </section>
-
       <section class="contact" id="contact">
         <h2>Trabajemos Juntos!</h2>
         <div class="icons-container">
@@ -246,5 +186,6 @@
         </div>
       </section>
     </main>
+    <script src="./assets/index.js" defer></script>
   </body>
 </html>
