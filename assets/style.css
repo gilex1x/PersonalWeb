@@ -111,8 +111,8 @@ section {
 }
 
 .proyects-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   justify-items: center;
   max-width: 1280px;
 }
@@ -200,7 +200,7 @@ iframe {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
   }
   .hamburguer-menu {
@@ -224,6 +224,9 @@ iframe {
 @media (max-width: 430px) {
   body {
     font-size: 16px;
+  }
+  .hero{
+    flex-direction: column;
   }
   .hero-text {
     width: 100%;
