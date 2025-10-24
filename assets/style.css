@@ -228,13 +228,15 @@ a div.proyects-cards_content {
 }
 
 .experience-item:nth-child(odd) .experience-date {
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
   padding-right: 2rem;
 }
 
 .experience-item:nth-child(even) .experience-date {
   grid-column: 2;
-  text-align: left;
+  display: flex;
+  justify-content: flex-start;
   padding-left: 2rem;
 }
 
@@ -244,7 +246,6 @@ a div.proyects-cards_content {
 }
 
 .experience-date {
-  display: flex;
   align-items: flex-start;
   padding-top: 1.5rem;
 }
