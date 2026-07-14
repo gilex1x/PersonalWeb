@@ -1,264 +1,421 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- SEO CONFIG -->
-    <meta
-      name="description"
-      content="Frontend Developer con experiencia en ReactJS y sus librerias."
-    />
-    <meta
-      name="keywords"
-      content="frontend,front end, web developer, developer, react, reactjs, nodejs, fullstack"
-    />
-    <meta name="robots" content="index, follow" />
-    <title>Gilberto|Dev</title>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Gilberto Santamaria | Portfolio</title>
     <link rel="canonical" href="https://gildev.xyz" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/iconsFont-v1.0/style.css" />
-    <link rel="stylesheet" href="./assets/style.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      defer
-      src="https://www.googletagmanager.com/gtag/js?id=G-YBBVGFWLL4"
-    ></script>
+    <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-YBBVGFWLL4"></script>
     <script defer>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-YBBVGFWLL4");
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "G-YBBVGFWLL4");
     </script>
-  </head>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Inter:wght@400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/style.css" />
+</head>
 
-  <body>
-    <header>
-      <nav class="navigation-container">
-        <label class="navigation-menu-icon" id="menu">
-          <i class="icon-embed2"></i>
-        </label>
-        <ul class="navigation-items" id="nav">
-          <li>
-            <a href="#hero" aria-label="Ir al inicio">Inicio</a>
-          </li>
-          <li>
-            <a href="#proyects" aria-label="Ir a proyectos"> Proyectos</a>
-          </li>
-          <li>
-            <a href="#skills" aria-label="Ir al habilidades">Habilidades</a>
-          </li>
-          <li>
-            <a href="#experience" aria-label="Ir a experiencia">Experiencia</a>
-          </li>
-          <li>
-            <a href="#contact" aria-label="Ir al contacto">Contacto</a>
-          </li>
-        </ul>
-      </nav>
+<body>
+    <!-- TopNavBar -->
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <span class="navbar-brand font-headline-md">Gilberto Santamaria</span>
+            <!-- Desktop Links -->
+            <div class="navbar-links font-label-md">
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a class="btn-primary font-label-md" href="#">Resume</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero container">
+        <div class="hero-grid">
+            <div>
+                <div class="badge">
+                    <span class="material-symbols-outlined filled">workspace_premium</span>
+                    <span class="badge-text font-label-sm">3 Years Experience</span>
+                </div>
+                <h1 class="hero-title font-display">
+                    Crafting <span class="text-gradient">Clean Code</span> &amp; Semantic Web.
+                </h1>
+                <p class="hero-subtitle font-body-lg">
+                    Frontend developer with 3 years of experience. I thrive on projects that challenge my technical
+                    skills and push the boundaries of modern web development. No generic divs, just pure semantic HTML.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn-large-primary font-label-md" href="#contact">
+                        <span>CONTACT ME</span>
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </a>
+                    <a class="btn-outline font-label-md" href="#projects">
+                        View Projects
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-glow"></div>
+                <div class="glass-card code-card">
+                    <div class="code-window-dots">
+                        <div class="dot dot-red"></div>
+                        <div class="dot dot-yellow"></div>
+                        <div class="dot dot-green"></div>
+                    </div>
+                    <code class="profile-code">
+                        <span class="text-accent-glow">const</span> profile = {<br/>
+                        &nbsp;&nbsp;name: <span class="text-on-tertiary-container">"Gilberto Santamaria"</span>,<br/>
+                        &nbsp;&nbsp;role: <span class="text-on-tertiary-container">"Frontend Architect"</span>,<br/>
+                        &nbsp;&nbsp;experience: <span class="text-on-tertiary-container">"3 years"</span>,<br/>
+                        &nbsp;&nbsp;mantra: <span class="text-on-tertiary-container">"Semantic HTML over divs"</span>,<br/>
+                        &nbsp;&nbsp;skills: [<span class="text-on-tertiary-container">"React"</span>, <span class="text-on-tertiary-container">"GraphQL"</span>, <span class="text-on-tertiary-container">"Automation"</span>]<br/>
+                        };
+                    </code>
+                    <div class="code-bg-icon">
+                        <span class="material-symbols-outlined filled">code</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
-    <main>
-      <section class="hero" id="hero">
-        <div class="hero-text">
-          <h1>Gilberto Santamaria</h1>
-          <p>
-            Frontend developer con 3 años de experiencia en el sector. Me encanta trabajar en proyectos que pongan a prueba mis habilidades y me lleven a prender cada día más.
-          </p>
-          <p>¡No a los div genéricos, si  al HTML semántico!</p>
+
+    <!-- Projects Section -->
+    <section class="section container" id="projects">
+        <div class="projects-header">
+            <div>
+                <h2 class="font-headline-lg">Featured Projects</h2>
+                <p class="font-body-md text-on-surface-variant">A collection of web experiences focused on technical
+                    precision.</p>
+            </div>
+            <div class="divider"></div>
         </div>
-        <div class="hero-button">
-          <a href="#contact">CONTACTAME</a>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card glass-card">
+                <div class="project-image-wrapper">
+                    <img alt="Begreen App" src="https://begreen.click/assets/img/banner.jpg" loading="lazy" />
+                    <div class="project-image-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <h3 class="font-headline-md">Begreen App</h3>
+                    <p class="font-body-md">The best recycling app in Colombia. Schedule pickups and earn rewards.</p>
+                    <a class="project-link" href="https://begreen.click/" target="_blank">
+                        View Project <span class="material-symbols-outlined">open_in_new</span>
+                    </a>
+                </div>
+            </div>
+            <div class="project-card glass-card">
+                <div class="project-image-wrapper">
+                    <img alt="Google Layout Clone" src="./assets/proyecto1.jpeg" loading="lazy" />
+                    <div class="project-image-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <h3 class="font-headline-md">Google Layout Clone</h3>
+                    <p class="font-body-md">Clone of the main Google layout built with HTML and CSS.</p>
+                    <a class="project-link" href="https://google.gildev.xyz/" target="_blank">
+                        View Project <span class="material-symbols-outlined">open_in_new</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card glass-card">
+                <div class="project-image-wrapper">
+                    <img alt="Facebook Old Login" src="./assets/proyecto2.jpeg" loading="lazy" />
+                    <div class="project-image-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <h3 class="font-headline-md">Facebook Old Login</h3>
+                    <p class="font-body-md">Clone of the previous Facebook login page, built with HTML and CSS.</p>
+                    <a class="project-link" href="https://facelook.gildev.xyz/" target="_blank">
+                        View Project <span class="material-symbols-outlined">open_in_new</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card glass-card">
+                <div class="project-image-wrapper">
+                    <img alt="Beer Filter" src="./assets/proyecto3.jpeg" loading="lazy" />
+                    <div class="project-image-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <h3 class="font-headline-md">Beer Filter</h3>
+                    <p class="font-body-md">Solution for a technical assessment using Handlebars and SASS.</p>
+                    <a class="project-link" href="https://beer.gildev.xyz/" target="_blank">
+                        View Project <span class="material-symbols-outlined">open_in_new</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="project-card glass-card">
+                <div class="project-image-wrapper">
+                    <img alt="Simon Says Game" src="./assets/proyecto4.jpeg" loading="lazy" />
+                    <div class="project-image-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <h3 class="font-headline-md">Simon Says Game</h3>
+                    <p class="font-body-md">A simple game built with CSS, HTML, and vanilla JavaScript.</p>
+                    <a class="project-link" href="https://simon.gildev.xyz/" target="_blank">
+                        View Project <span class="material-symbols-outlined">open_in_new</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Project 5 -->
+            <div class="project-card glass-card">
+                <div class="project-image-wrapper">
+                    <img alt="Pokedex with PokeApi" src="./assets/proyecto5.jpeg" loading="lazy" />
+                    <div class="project-image-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <h3 class="font-headline-md">Pokedex with PokeApi</h3>
+                    <p class="font-body-md">Website built with React, Redux, and Redux-Saga.</p>
+                    <a class="project-link" href="https://pokedux.gildev.xyz/" target="_blank">
+                        View Project <span class="material-symbols-outlined">open_in_new</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Project 6 -->
+            <div class="project-card glass-card">
+                <div class="project-image-wrapper">
+                    <img alt="Rick and Morty" src="./assets/proyecto6.jpeg" loading="lazy" />
+                    <div class="project-image-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <h3 class="font-headline-md">Rick and Morty</h3>
+                    <p class="font-body-md">Consuming Rick and Morty API and DOM manipulation.</p>
+                    <a class="project-link" href="https://ricknmortygildev.netlify.app/" target="_blank">
+                        View Project <span class="material-symbols-outlined">open_in_new</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Project 7 -->
+
         </div>
-      </section>
+    </section>
 
-      <section class="proyects" id="proyects">
-        <h2>Proyectos</h2>
-        <div class="proyects-cards slidetrack">
-          <a href="https://google.gildev.xyz/" target="blank" aria-label="ver proyecto">
-            <img
-              src="./assets/proyecto1.jpeg"
-              alt="imagen proyecto1"
-              loading="lazy"
-            />
-            <div class="proyects-cards_content">
-              <h3>Google layout clon</h3>
-              <p>Clon del main layout de Google hecho con HTML y CSS</p>
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+        <div class="container">
+            <h2 class="font-headline-lg text-center">Technical Expertise</h2>
+            <div class="skills-grid">
+                <!-- Skill Category 1 -->
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">
+                        <span class="material-symbols-outlined">javascript</span>
+                    </div>
+                    <h3 class="font-headline-md">Core Tech</h3>
+                    <p class="font-body-md text-on-surface-variant">Website development using HTML5, CSS3, and
+                        JavaScript.</p>
+                    <div class="skill-tags font-label-sm">
+                        <span class="skill-tag">ES6+</span>
+                        <span class="skill-tag">Semantic HTML</span>
+                    </div>
+                </div>
+                <!-- Skill Category 2 -->
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">
+                        <span class="material-symbols-outlined">layers</span>
+                    </div>
+                    <h3 class="font-headline-md">React</h3>
+                    <p class="font-body-md text-on-surface-variant">Web application development using React.js and its
+                        ecosystem.</p>
+                    <div class="skill-tags font-label-sm">
+                        <span class="skill-tag">Redux</span>
+                        <span class="skill-tag">Saga</span>
+                    </div>
+                </div>
+                <!-- Skill Category 3 -->
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">
+                        <span class="material-symbols-outlined">settings_suggest</span>
+                    </div>
+                    <h3 class="font-headline-md">Automation</h3>
+                    <p class="font-body-md text-on-surface-variant">Advanced web scraping and complex automated
+                        workflows.</p>
+                    <div class="skill-tags font-label-sm">
+                        <span class="skill-tag">Puppeteer</span>
+                        <span class="skill-tag">Make</span>
+                    </div>
+                </div>
+                <!-- Skill Category 4 -->
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">
+                        <span class="material-symbols-outlined">web_asset</span>
+                    </div>
+                    <h3 class="font-headline-md">Platforms</h3>
+                    <p class="font-body-md text-on-surface-variant">Website setup with WordPress and headless CMS.</p>
+                    <div class="skill-tags font-label-sm">
+                        <span class="skill-tag">WordPress</span>
+                        <span class="skill-tag">PHP</span>
+                    </div>
+                </div>
             </div>
-          </a>
-          <a href="https://facelook.gildev.xyz/" target="blank">
-            <img
-              src="./assets/proyecto2.jpeg"
-              alt="imagen proyecto2"
-              loading="lazy"
-            />
-            <h3>Facebook old login</h3>
-            <p>Clon del anterior Login de facebook, relizado con HTML y CSS</p>
-          </a>
-          <a href="https://beer.gildev.xyz/" target="blank" aria-label="ver proyecto">
-            <img
-              loading="lazy"
-              src="./assets/proyecto3.jpeg"
-              alt="imagen proyecto3"
-            />
-            <h3>Filtro cervezas - Prueba tecnica</h3>
-            <p>Solución de una prueba tecnica usando handlebars y SASS</p>
-          </a>
-          <a href="https://simon.gildev.xyz/" target="blank" aria-label="ver proyecto">
-            <img
-              loading="lazy"
-              src="./assets/proyecto4.jpeg"
-              alt="imagen proyecto3"
-            />
-            <h3>Juego de simon dice</h3>
-            <p>Un simple juego realizado con CSS, HMTL y Javascript vanilla</p>
-          </a>
-          <a href="https://pokedux.gildev.xyz/" target="blank" aria-label="ver proyecto">
-            <img
-              loading="lazy"
-              src="./assets/proyecto5.jpeg"
-              alt="imagen proyecto3"
-            />
-            <h3>Pokedex con PokeApi</h3>
-            <p>Sitio web realizado con React, Redux y Redux-Saga</p>
-          </a>
-          <a href="https://rickmorty.gildev.xyz/" target="blank" aria-label="ver proyecto">
-            <img
-              loading="lazy"
-              src="./assets/proyecto6.jpeg"
-              alt="imagen proyecto"
-            />
-            <h3>Rick and Morty</h3>
-            <p>Consumo de la Rick an Morty API y manipulación del DOM</p>
-          </a>
         </div>
-      </section>
+    </section>
 
-      <section class="skills" id="skills">
-        <h2>Habilidades</h2>
-        <ul class="skills-list">
-          <li></li>
-          <li>
-            <i class="icon-html-five2"></i>Desarrollo de sitios web con
-            <strong> HTML5, CSS3 Y Javascript</strong>
-          </li>
-          <li>
-            ✅Uso de estandares de la industria como ECMASCRIPT 6+ y HTML
-            semantico.
-          </li>
-          <li>
-            📦Desarrollo de aplicaciones web usando <strong>ReactJs</strong> y
-            sus distintas librerias.
-          </li>
-	   <li>
-            🕸️Desarrollo de web scraping usando Puppeteer.
-          </li>
-          <li>
-            <i class="icon-wordpress"></i>Montaje de sitios web con WordPresss
-          </li>
-          <li></li>
-        </ul>
-      </section>
+    <!-- Experience Section -->
+    <section class="section container experience-section" id="experience">
+        <h2 class="font-headline-lg text-center">Work Experience</h2>
+        <div class="timeline">
+            <!-- Timeline Line -->
+            <div class="timeline-line"></div>
 
-      <section class="experience" id="experience">
-        <h2>Experiencia Laboral</h2>
-        <div class="experience-timeline">
-          <div class="experience-item">
-            <div class="experience-date">
-              <span>Dic 2024 - Presente</span>
+            <!-- Item 1: Ventura Travel -->
+            <div class="timeline-item">
+                <div class="timeline-meta">
+                    <span class="timeline-date font-label-sm">Dec 2024 - Present</span>
+                    <h3 class="font-headline-md text-primary">Fullstack Automation Developer</h3>
+                    <p class="timeline-company font-label-md">Ventura Travel - Germany (Remote)</p>
+                </div>
+                <div class="timeline-content-card glass-card">
+                    <div class="timeline-dot"></div>
+                    <p class="font-body-md text-on-surface-variant">Designing and maintaining automated workflows using
+                        Make (Integromat) and GraphQL. Integrating multiple services to optimize processes.</p>
+                    <div class="timeline-tags font-label-sm">
+                        <span class="timeline-tag">Make</span>
+                        <span class="timeline-tag">GraphQL</span>
+                        <span class="timeline-tag">Automation</span>
+                    </div>
+                </div>
             </div>
-            <div class="experience-content">
-              <h3>Fullstack Automation Developer</h3>
-              <h4>Ventura Travel - Alemania (Remoto)</h4>
-              <p>Diseño y mantenimiento de flujos de trabajo automatizados usando Make (Integromat) y GraphQL. Integración de múltiples servicios para optimizar procesos y reducir la carga de trabajo manual.</p>
-              <ul class="experience-tags">
-                <li>Make (Integromat)</li>
-                <li>GraphQL</li>
-                <li>Automation</li>
-                <li>REST APIs</li>
-              </ul>
-            </div>
-          </div>
 
-          <div class="experience-item">
-            <div class="experience-date">
-              <span>Oct 2022 - Ago 2024</span>
+            <!-- Item 2: Iam Studio -->
+            <div class="timeline-item">
+                <div class="timeline-meta">
+                    <span class="timeline-date font-label-sm">Oct 2022 - Aug 2024</span>
+                    <h3 class="font-headline-md text-primary">Frontend Developer</h3>
+                    <p class="timeline-company font-label-md">Iam Studio - Bogotá, Colombia</p>
+                </div>
+                <div class="timeline-content-card glass-card">
+                    <div class="timeline-dot"></div>
+                    <p class="font-body-md text-on-surface-variant">Implementing new features and developing mapping
+                        interfaces for decision-making. Collaborating with design and backend teams.</p>
+                    <div class="timeline-tags font-label-sm">
+                        <span class="timeline-tag">React.js</span>
+                        <span class="timeline-tag">TypeScript</span>
+                        <span class="timeline-tag">UI/UX</span>
+                    </div>
+                </div>
             </div>
-            <div class="experience-content">
-              <h3>Frontend Developer</h3>
-              <h4>Iam Studio - Bogotá, Colombia</h4>
-              <p>Implementación de nuevas funcionalidades, resolución de bugs y desarrollo de interfaces de mapeo para la toma de decisiones de usuarios. Colaboración con equipos de diseño y backend.</p>
-              <ul class="experience-tags">
-                <li>React.js</li>
-                <li>TypeScript</li>
-                <li>JavaScript</li>
-                <li>UI/UX</li>
-              </ul>
-            </div>
-          </div>
 
-          <div class="experience-item">
-            <div class="experience-date">
-              <span>Nov 2021 - Sep 2022</span>
+            <!-- Item 3: Confeorg -->
+            <div class="timeline-item">
+                <div class="timeline-meta">
+                    <span class="timeline-date font-label-sm">Nov 2021 - Sep 2022</span>
+                    <h3 class="font-headline-md text-primary">Software Developer Analyst</h3>
+                    <p class="timeline-company font-label-md">Confeorg - Bogotá, Colombia</p>
+                </div>
+                <div class="timeline-content-card glass-card">
+                    <div class="timeline-dot"></div>
+                    <p class="font-body-md text-on-surface-variant">SEO and site performance improvement. Developing
+                        automation services and integrating Google Maps API for data visualization.</p>
+                    <div class="timeline-tags font-label-sm">
+                        <span class="timeline-tag">SEO</span>
+                        <span class="timeline-tag">Node.js</span>
+                        <span class="timeline-tag">Maps API</span>
+                    </div>
+                </div>
             </div>
-            <div class="experience-content">
-              <h3>Software Developer Analyst</h3>
-              <h4>Confeorg - Bogotá, Colombia</h4>
-              <p>Mejora de SEO y rendimiento del sitio, desarrollo de servicios para reducir la sobrepoblación en centros de capacitación, integración de Google Maps API para visualización de datos.</p>
-              <ul class="experience-tags">
-                <li>SEO</li>
-                <li>Performance</li>
-                <li>Google Maps API</li>
-                <li>Node.js</li>
-              </ul>
-            </div>
-          </div>
 
-          <div class="experience-item">
-            <div class="experience-date">
-              <span>Oct 2020 - Nov 2021</span>
+            <!-- Item 4: Gráfico Digital -->
+            <div class="timeline-item">
+                <div class="timeline-meta">
+                    <span class="timeline-date font-label-sm">Oct 2020 - Nov 2021</span>
+                    <h3 class="font-headline-md text-primary">Frontend Developer</h3>
+                    <p class="timeline-company font-label-md">Gráfico Digital - Chía, Colombia</p>
+                </div>
+                <div class="timeline-content-card glass-card">
+                    <div class="timeline-dot"></div>
+                    <p class="font-body-md text-on-surface-variant">Creating and maintaining websites for clients using
+                        React.js and WordPress, optimizing performance and visibility.</p>
+                    <div class="timeline-tags font-label-sm">
+                        <span class="timeline-tag">React.js</span>
+                        <span class="timeline-tag">WordPress</span>
+                        <span class="timeline-tag">HTML/CSS</span>
+                    </div>
+                </div>
             </div>
-            <div class="experience-content">
-              <h3>Frontend Developer</h3>
-              <h4>Gráfico Digital - Chía, Colombia</h4>
-              <p>Creación y mantenimiento de sitios web para clientes usando React.js y WordPress, mejorando el rendimiento y la visibilidad de los proyectos.</p>
-              <ul class="experience-tags">
-                <li>React.js</li>
-                <li>WordPress</li>
-                <li>HTML5</li>
-                <li>CSS3</li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <section class="contact" id="contact">
-        <h2>Trabajemos Juntos!</h2>
-        <div class="icons-container">
-          <a
-            href="https://www.linkedin.com/in/gilberto-santamaria-724a97150/"
-            target="blank"
-            aria-label="ver perfil de linkedin"
-          >
-            <i class="icon-linkedin"></i>
-          </a>
-          <a href="https://twitter.com/zGilbertoS" target="blank" aria-label="ver perfil de Twitter">
-            <i class="icon-twitter"></i>
-          </a>
-          <a href="https://github.com/gilex1x" target="blank" aria-label="ver perfil de Github">
-            <i class="icon-github"></i>
-          </a>
+    <!-- Contact Section -->
+    <section class="section container text-center" id="contact">
+        <div class="contact-card glass-card">
+            <div class="contact-icon-bg">
+                <span class="material-symbols-outlined filled">send</span>
+            </div>
+            <h2 class="font-headline-lg">Let's Work Together!</h2>
+            <p class="font-body-lg text-on-surface-variant">
+                Do you have a project in mind that needs a solid structure and an impeccable user experience? Let's talk
+                about how I can help you.
+            </p>
+            <div class="contact-links">
+                <a class="contact-link" href="https://www.linkedin.com/in/gilberto-santamaria-724a97150/"
+                    target="_blank">
+                    <span class="material-symbols-outlined">contact_page</span>
+                    <span>LinkedIn</span>
+                </a>
+                <a class="contact-link" href="https://github.com/gilex1x" target="_blank">
+                    <span class="material-symbols-outlined">terminal</span>
+                    <span>GitHub</span>
+                </a>
+                <a class="contact-link" href="https://twitter.com/zGilbertoS" target="_blank">
+                    <span class="material-symbols-outlined">alternate_email</span>
+                    <span>Twitter</span>
+                </a>
+            </div>
         </div>
-      </section>
-    </main>
-    <script src="./assets/index.js" defer></script>
-  </body>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container container">
+            <div>
+                <span class="font-headline-md text-primary">Gilberto Santamaria</span>
+            </div>
+            <p class="footer-copy font-body-md text-secondary">
+                © 2024 Gilberto Santamaria. Built with precision.
+            </p>
+            <div class="footer-links font-label-md">
+                <a href="https://github.com/gilex1x">GitHub</a>
+                <a href="https://www.linkedin.com/in/gilberto-santamaria-724a97150/">LinkedIn</a>
+                <a href="https://twitter.com/zGilbertoS">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll implementation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Sticky header background shift on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
 </html>
