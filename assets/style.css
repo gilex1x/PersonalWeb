@@ -616,20 +616,21 @@ p {
   position: relative;
 }
 
-.timeline::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 20px;
-  width: 2px;
-  background: var(--border-color);
-}
-
 .timeline-item {
   position: relative;
   padding-left: 60px;
   margin-bottom: 2.5rem;
+}
+
+.timeline-item:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  top: 21px;
+  bottom: calc(-2.5rem - 21px);
+  left: 20px;
+  width: 2px;
+  background: var(--border-color);
+  z-index: 1;
 }
 
 .timeline-item:last-child {
