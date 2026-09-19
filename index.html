@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Gilberto Santamaria | Senior Fullstack &amp; Frontend Developer (React, TypeScript, Node.js)</title>
     <meta name="description"
-        content="Gilberto Santamaria is a Senior Fullstack &amp; Frontend Developer with 4+ years of experience building modern web applications using React.js, TypeScript, Node.js, GraphQL, and workflow automation (N8N, Make)." />
+        content="Gilberto Santamaria is a Senior Fullstack &amp; Frontend Developer with 5+ years of experience building modern web applications using React.js, TypeScript, Node.js, GraphQL, and workflow automation (N8N, Make)." />
     <meta name="keywords"
         content="Gilberto Santamaria, Fullstack Developer, Frontend Developer, React Developer, TypeScript Engineer, Node.js Developer, Automation Developer, Remote Software Engineer, React Native, GraphQL, N8N, Web Developer Portfolio" />
     <meta name="author" content="Gilberto Santamaria" />
@@ -116,7 +116,6 @@
 </head>
 
 <body>
-
     <!-- TopNavBar -->
     <nav class="navbar">
         <div class="navbar-container container">
@@ -143,17 +142,41 @@
         <h1 class="hero-logo">Gilberto <span class="sr-only">Santamaria | Senior Fullstack &amp; Frontend
                 Developer</span></h1>
 
-        <div class="search-bar-container">
-            <div class="search-bar">
-                <span class="material-symbols-outlined search-icon" aria-hidden="true">search</span>
-                <div class="search-input-mock">
-                    <span id="typing-text"></span><span class="cursor"></span>
+        <div class="search-bar-container" id="search-container">
+            <div class="search-bar" id="search-bar">
+                <span class="search-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <line x1="21" y1="21" x2="16" y2="16"></line>
+                    </svg>
+                </span>
+                <input type="text" id="search-input" class="search-input" placeholder="Search skills, projects, experience..." autocomplete="off" spellcheck="false" aria-label="Search portfolio" aria-autocomplete="list" aria-controls="search-suggestions" aria-expanded="false" />
+                <button type="button" class="search-clear-btn" id="search-clear" title="Clear search" aria-label="Clear search" style="display: none;">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+                </button>
+                <div class="search-actions">
+                    <button type="button" class="search-action-btn" title="Search by voice" aria-label="Search by voice">
+                        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                            <path fill="#4285f4" d="m12 15c1.66 0 3-1.34 3-3v-6c0-1.66-1.34-3-3-3s-3 1.34-3 3v6c0 1.66 1.34 3 3 3z"/>
+                            <path fill="#34a853" d="m11 18.08h2v3.92h-2z"/>
+                            <path fill="#fbbc05" d="m7.05 16.87-1.4-1.4c1.4-1.4 2.25-3.32 2.25-5.47h2c0 2.76-1.12 5.26-2.85 6.87z"/>
+                            <path fill="#ea4335" d="m12 16.93a4.93 4.93 0 0 1 -3.49 -1.45l-1.41 1.41c1.25 1.25 2.98 2.03 4.9 2.03s3.65-.78 4.9-2.03l-1.41-1.41a4.93 4.93 0 0 1 -3.49 1.45z"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="search-action-btn" title="Search by image" aria-label="Search by image">
+                        <svg viewBox="0 0 192 192" width="24" height="24" aria-hidden="true">
+                            <rect fill="none" width="192" height="192"/>
+                            <path fill="#4285f4" d="M141.5 54.5h-13c-3.6 0-6.5-2.9-6.5-6.5v0c0-3.6 2.9-6.5 6.5-6.5h13c19.6 0 35.5 15.9 35.5 35.5v13c0 3.6-2.9 6.5-6.5 6.5v0c-3.6 0-6.5-2.9-6.5-6.5v-13c0-12.4-10.1-22.5-22.5-22.5z"/>
+                            <path fill="#ea4335" d="M50.5 54.5h13c3.6 0 6.5-2.9 6.5-6.5v0c0-3.6-2.9-6.5-6.5-6.5h-13c-19.6 0-35.5 15.9-35.5 35.5v13c0 3.6 2.9 6.5 6.5 6.5v0c3.6 0 6.5-2.9 6.5-6.5v-13c0-12.4 10.1-22.5 22.5-22.5z"/>
+                            <path fill="#fbbc04" d="M50.5 137.5h13c3.6 0 6.5 2.9 6.5 6.5v0c0 3.6-2.9 6.5-6.5 6.5h-13c-19.6 0-35.5-15.9-35.5-35.5v-13c0-3.6 2.9-6.5 6.5-6.5v0c3.6 0 6.5 2.9 6.5 6.5v13c0 12.4 10.1 22.5 22.5 22.5z"/>
+                            <path fill="#34a853" d="M141.5 137.5h-13c-3.6 0-6.5 2.9-6.5 6.5v0c0 3.6 2.9 6.5 6.5 6.5h13c19.6 0 35.5-15.9 35.5-35.5v-13c0-3.6-2.9-6.5-6.5-6.5v0c-3.6 0-6.5 2.9-6.5 6.5v13c0 12.4-10.1 22.5-22.5 22.5z"/>
+                            <circle fill="#4285f4" cx="96" cy="96" r="30"/>
+                            <circle fill="#34a853" cx="132" cy="64" r="9"/>
+                        </svg>
+                    </button>
                 </div>
-                <span class="material-symbols-outlined search-mic" title="Voice Search"
-                    aria-label="Voice Search">mic</span>
-                <span class="material-symbols-outlined search-cam" title="Image Search"
-                    aria-label="Image Search">lens</span>
             </div>
+            <ul class="search-suggestions" id="search-suggestions" role="listbox" style="display: none;"></ul>
         </div>
 
         <div class="hero-buttons">
@@ -166,189 +189,6 @@
             Focused on technical precision, modern architectures, and delightful user interfaces.
         </p>
     </header>
-
-    <!-- Projects Section -->
-    <section class="section container" id="projects">
-        <div class="section-header">
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-subtitle">Web experiences built with precision</p>
-        </div>
-
-        <div class="projects-grid">
-            <!-- Project 0: n8n Node -->
-            <a href="https://www.npmjs.com/package/n8n-nodes-whatsapp-link-generator" target="_blank"
-                class="project-card">
-                <div class="project-image-wrapper npm-bg">
-                    <span class="material-symbols-outlined npm-icon">extension</span>
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">n8n WhatsApp Link Generator</h3>
-                    <p class="project-desc">An n8n community node to easily generate WhatsApp action links.</p>
-                    <span class="project-link">View Package <span
-                            class="material-symbols-outlined">arrow_forward</span></span>
-                </div>
-            </a>
-            <!-- Project Re-go: Android & Web App -->
-            <a href="https://play.google.com/store/apps/details?id=com.gilexx.regoapp" target="_blank"
-                rel="noopener noreferrer" class="project-card rego-card">
-                <div class="project-image-wrapper rego-bg">
-                    <img alt="Re-go Recycling Rewards App - Android & Web built with React Native"
-                        src="https://begreenpage.netlify.app/assets/img/App_imagen.jpeg" loading="lazy"
-                        class="rego-phone-img" />
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Re-go App</h3>
-                    <p class="project-desc">Colombian recycling platform built with React Native for Android &amp; Web.
-                        Schedule pickups, earn points, and redeem rewards for recycling at home.</p>
-                    <span class="project-link">View on Play Store <span
-                            class="material-symbols-outlined">arrow_forward</span></span>
-                </div>
-            </a>
-            <!-- Project 1 -->
-            <a href="https://begreenpage.netlify.app/" target="_blank" class="project-card">
-                <div class="project-image-wrapper">
-                    <img alt="Begreen Recycling Application in Colombia built by Gilberto Santamaria"
-                        src="https://begreenpage.netlify.app/assets/img/banner.jpg" loading="lazy" width="600" height="400" />
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Begreen App</h3>
-                    <p class="project-desc">The best recycling app in Colombia. Schedule pickups and earn rewards.</p>
-                    <span class="project-link">View Project <span
-                            class="material-symbols-outlined">arrow_forward</span></span>
-                </div>
-            </a>
-            <!-- Project 4: Parchados -->
-            <a href="https://parchadoscol.com/" target="_blank" class="project-card">
-                <div class="project-image-wrapper parchados-bg">
-                    <img alt="Parchados Entertainment Experience Platform Logo"
-                        src="https://parchadoscol.com/assets/logo.png" loading="lazy" width="180" height="60"
-                        class="parchados-logo-img" />
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Parchados</h3>
-                    <p class="project-desc">Platform connecting users with unique entertainment experiences and local
-                        business allies in Sabana Centro, Colombia.</p>
-                    <span class="project-link">View Project <span
-                            class="material-symbols-outlined">arrow_forward</span></span>
-                </div>
-            </a>
-            <!-- Project 2 -->
-            <a href="https://github.com/gilex1x/Google-Clone" target="_blank" class="project-card">
-                <div class="project-image-wrapper">
-                    <img alt="Google Search UI Layout Clone built with HTML5 and CSS3" src="./assets/proyecto1.jpeg"
-                        loading="lazy" width="600" height="400" />
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Google Layout Clone</h3>
-                    <p class="project-desc">Clone of the main Google layout built with pure HTML and CSS.</p>
-                    <span class="project-link">View Repository <span
-                            class="material-symbols-outlined">arrow_forward</span></span>
-                </div>
-            </a>
-            <!-- Project 3 -->
-            <a href="https://github.com/gilex1x/facelook" target="_blank" class="project-card">
-                <div class="project-image-wrapper">
-                    <img alt="Facebook Login Interface Clone built with HTML and CSS" src="./assets/proyecto2.jpeg"
-                        loading="lazy" width="600" height="400" />
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Facebook Old Login</h3>
-                    <p class="project-desc">Clone of the previous Facebook login page, built with HTML and CSS.</p>
-                    <span class="project-link">View Repository <span
-                            class="material-symbols-outlined">arrow_forward</span></span>
-                </div>
-            </a>
-
-            <!-- Project 5 -->
-            <a href="https://github.com/gilex1x/simon-dice" target="_blank" class="project-card">
-                <div class="project-image-wrapper">
-                    <img alt="Simon Says Interactive Web Game built with Vanilla JavaScript"
-                        src="./assets/proyecto4.jpeg" loading="lazy" width="600" height="400" />
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Simon Says Game</h3>
-                    <p class="project-desc">A simple interactive game built with CSS, HTML, and vanilla JavaScript.</p>
-                    <span class="project-link">View Repository <span
-                            class="material-symbols-outlined">arrow_forward</span></span>
-                </div>
-            </a>
-            <!-- Project 6 -->
-            <a href="https://github.com/gilex1x/pokedux" target="_blank" class="project-card">
-                <div class="project-image-wrapper">
-                    <img alt="Pokedex React and Redux Web Application consuming PokeAPI" src="./assets/proyecto5.jpeg"
-                        loading="lazy" width="600" height="400" />
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Pokedex Application</h3>
-                    <p class="project-desc">Website built with React, Redux, and Redux-Saga consuming PokeAPI.</p>
-                    <span class="project-link">View Repository <span
-                            class="material-symbols-outlined">arrow_forward</span></span>
-                </div>
-            </a>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="section skills-section" id="skills">
-        <div class="container">
-            <div class="section-header text-center">
-                <h2 class="section-title">Technical Expertise</h2>
-                <p class="section-subtitle">Tools and technologies I use daily</p>
-            </div>
-
-            <div class="skills-container">
-                <div class="skill-category">
-                    <div class="skill-category-header">
-                        <span class="material-symbols-outlined skill-category-icon">javascript</span>
-                        <h3 class="skill-category-title font-headline-md">Core Frontend</h3>
-                    </div>
-                    <div class="skill-chips">
-                        <span class="skill-chip">HTML5 / Semantic HTML</span>
-                        <span class="skill-chip">CSS3</span>
-                        <span class="skill-chip">JavaScript (ES6+)</span>
-                        <span class="skill-chip">TypeScript</span>
-                        <span class="skill-chip">SEO</span>
-                        <span class="skill-chip">Google Maps API</span>
-                        <span class="skill-chip">Leaflet</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="skill-category-header">
-                        <span class="material-symbols-outlined skill-category-icon"
-                            style="color: var(--google-red);">layers</span>
-                        <h3 class="skill-category-title font-headline-md">Frameworks & Libraries</h3>
-                    </div>
-                    <div class="skill-chips">
-                        <span class="skill-chip">React.js</span>
-                        <span class="skill-chip">Redux</span>
-                        <span class="skill-chip">Redux-Saga</span>
-                        <span class="skill-chip">React Native</span>
-                        <span class="skill-chip">Vite</span>
-                        <span class="skill-chip">Next.js</span>
-                        <span class="skill-chip">MUI</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="skill-category-header">
-                        <span class="material-symbols-outlined skill-category-icon"
-                            style="color: var(--google-yellow);">settings_suggest</span>
-                        <h3 class="skill-category-title font-headline-md">Automation & Backend</h3>
-                    </div>
-                    <div class="skill-chips">
-                        <span class="skill-chip">Node.js</span>
-                        <span class="skill-chip">GraphQL</span>
-                        <span class="skill-chip">Puppeteer</span>
-                        <span class="skill-chip">N8N</span>
-                        <span class="skill-chip">Supabase</span>
-                        <span class="skill-chip">MongoDB</span>
-                        <span class="skill-chip">Make (Integromat)</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Experience Section -->
     <section class="section container" id="experience">
@@ -457,6 +297,253 @@
         </div>
     </section>
 
+    <!-- Projects Section -->
+    <section class="section container" id="projects">
+        <div class="section-header">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Web experiences built with precision</p>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project 0: n8n Node -->
+            <a href="https://www.npmjs.com/package/n8n-nodes-whatsapp-link-generator" target="_blank"
+                class="project-card">
+                <div class="project-image-wrapper npm-bg">
+                    <span class="material-symbols-outlined npm-icon">extension</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">n8n WhatsApp Link Generator</h3>
+                    <p class="project-desc">An n8n community node to easily generate WhatsApp action links.</p>
+                    <span class="project-link">View Package <span
+                            class="material-symbols-outlined">arrow_forward</span></span>
+                </div>
+            </a>
+            <!-- Project Re-go: Android & Web App -->
+            <a href="https://play.google.com/store/apps/details?id=com.gilexx.regoapp" target="_blank"
+                rel="noopener noreferrer" class="project-card rego-card">
+                <div class="project-image-wrapper rego-bg">
+                    <img alt="Re-go Recycling Rewards App - Android & Web built with React Native"
+                        src="https://begreenpage.netlify.app/assets/img/App_imagen.jpeg" loading="lazy"
+                        class="rego-phone-img" />
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Re-go App</h3>
+                    <p class="project-desc">Colombian recycling platform built with React Native for Android &amp; Web.
+                        Schedule pickups, earn points, and redeem rewards for recycling at home.</p>
+                    <span class="project-link">View on Play Store <span
+                            class="material-symbols-outlined">arrow_forward</span></span>
+                </div>
+            </a>
+            <!-- Project 1 -->
+            <a href="https://begreenpage.netlify.app/" target="_blank" class="project-card">
+                <div class="project-image-wrapper">
+                    <img alt="Begreen Recycling Application in Colombia built by Gilberto Santamaria"
+                        src="https://begreenpage.netlify.app/assets/img/banner.jpg" loading="lazy" width="600"
+                        height="400" />
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Begreen App</h3>
+                    <p class="project-desc">The best recycling app in Colombia. Schedule pickups and earn rewards.</p>
+                    <span class="project-link">View Project <span
+                            class="material-symbols-outlined">arrow_forward</span></span>
+                </div>
+            </a>
+            <!-- Project 4: Parchados -->
+            <a href="https://parchadoscol.com/" target="_blank" class="project-card">
+                <div class="project-image-wrapper parchados-bg">
+                    <img alt="Parchados Entertainment Experience Platform Logo"
+                        src="https://parchadoscol.com/assets/logo.png" loading="lazy" width="180" height="60"
+                        class="parchados-logo-img" />
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Parchados</h3>
+                    <p class="project-desc">Platform connecting users with unique entertainment experiences and local
+                        business allies in Sabana Centro, Colombia.</p>
+                    <span class="project-link">View Project <span
+                            class="material-symbols-outlined">arrow_forward</span></span>
+                </div>
+            </a>
+            <!-- Project 2 -->
+            <a href="https://github.com/gilex1x/Google-Clone" target="_blank" class="project-card">
+                <div class="project-image-wrapper">
+                    <img alt="Google Search UI Layout Clone built with HTML5 and CSS3" src="./assets/proyecto1.jpeg"
+                        loading="lazy" width="600" height="400" />
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Google Layout Clone</h3>
+                    <p class="project-desc">Clone of the main Google layout built with pure HTML and CSS.</p>
+                    <span class="project-link">View Repository <span
+                            class="material-symbols-outlined">arrow_forward</span></span>
+                </div>
+            </a>
+            <!-- Project 3 -->
+            <a href="https://github.com/gilex1x/facelook" target="_blank" class="project-card">
+                <div class="project-image-wrapper">
+                    <img alt="Facebook Login Interface Clone built with HTML and CSS" src="./assets/proyecto2.jpeg"
+                        loading="lazy" width="600" height="400" />
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Facebook Old Login</h3>
+                    <p class="project-desc">Clone of the previous Facebook login page, built with HTML and CSS.</p>
+                    <span class="project-link">View Repository <span
+                            class="material-symbols-outlined">arrow_forward</span></span>
+                </div>
+            </a>
+
+            <!-- Project 5 -->
+            <a href="https://github.com/gilex1x/simon-dice" target="_blank" class="project-card">
+                <div class="project-image-wrapper">
+                    <img alt="Simon Says Interactive Web Game built with Vanilla JavaScript"
+                        src="./assets/proyecto4.jpeg" loading="lazy" width="600" height="400" />
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Simon Says Game</h3>
+                    <p class="project-desc">A simple interactive game built with CSS, HTML, and vanilla JavaScript.</p>
+                    <span class="project-link">View Repository <span
+                            class="material-symbols-outlined">arrow_forward</span></span>
+                </div>
+            </a>
+            <!-- Project 6 -->
+            <a href="https://github.com/gilex1x/pokedux" target="_blank" class="project-card">
+                <div class="project-image-wrapper">
+                    <img alt="Pokedex React and Redux Web Application consuming PokeAPI" src="./assets/proyecto5.jpeg"
+                        loading="lazy" width="600" height="400" />
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Pokedex Application</h3>
+                    <p class="project-desc">Website built with React, Redux, and Redux-Saga consuming PokeAPI.</p>
+                    <span class="project-link">View Repository <span
+                            class="material-symbols-outlined">arrow_forward</span></span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Technical Expertise</h2>
+                <p class="section-subtitle">Tools and technologies I use daily</p>
+            </div>
+
+            <div class="skills-container">
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <span class="material-symbols-outlined skill-category-icon">javascript</span>
+                        <h3 class="skill-category-title font-headline-md">Core Frontend</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="skill-chip">
+                            <img src="./assets/skills/html5.webp" alt="HTML5 logo" class="skill-icon" width="20" height="20" loading="lazy" />
+                            <span>HTML5 / Semantic HTML</span>
+                        </span>
+                        <span class="skill-chip">
+                            <img src="./assets/skills/css3.webp" alt="CSS3 logo" class="skill-icon" width="20" height="20" loading="lazy" />
+                            <span>CSS3</span>
+                        </span>
+                        <span class="skill-chip">
+                            <img src="./assets/skills/javascript.webp" alt="JavaScript logo" class="skill-icon" width="20" height="20" loading="lazy" />
+                            <span>JavaScript (ES6+)</span>
+                        </span>
+                        <span class="skill-chip">
+                            <img src="./assets/skills/typescript.webp" alt="TypeScript logo" class="skill-icon" width="20" height="20" loading="lazy" />
+                            <span>TypeScript</span>
+                        </span>
+                        <span class="skill-chip">
+                            <img src="./assets/skills/seo.webp" alt="SEO logo" class="skill-icon" width="20" height="20" loading="lazy" />
+                            <span>SEO</span>
+                        </span>
+                        <span class="skill-chip">
+                            <img src="./assets/skills/googlemaps.webp" alt="Google Maps API logo" class="skill-icon" width="20" height="20" loading="lazy" />
+                            <span>Google Maps API</span>
+                        </span>
+                        <span class="skill-chip">
+                            <img src="./assets/skills/leaflet.webp" alt="Leaflet logo" class="skill-icon" width="20" height="20" loading="lazy" />
+                            <span>Leaflet</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <span class="material-symbols-outlined skill-category-icon"
+                            style="color: var(--google-red);">layers</span>
+                        <h3 class="skill-category-title font-headline-md">Frameworks & Libraries</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="skill-chip">
+                            <img src="./assets/skills/react.webp" alt="React.js logo" class="skill-icon" width="20" height="20" loading="lazy" />
+                            <span>React.js</span>
+                        </span>
+                        <span class="skill-chip">
+                            <img src="./assets/skills/redux.webp" alt="Redux logo" class="skill-icon" width="20" height="20" loading="lazy" />
+                            <span>Redux</span>
+                        </span>
+                        <span class="skill-chip">
+                            <img src="./assets/skills/reduxsaga.webp" alt="Redux-Saga logo" class="skill-icon" width="20" height="20" loading="lazy" />
+                            <span>Redux-Saga</span>
+                        </span>
+                        <span class="skill-chip">
+                            <img src="./assets/skills/reactnative.webp" alt="React Native logo" class="skill-icon" width="20" height="20" loading="lazy" />
+                            <span>React Native</span>
+                        </span>
+                        <span class="skill-chip">
+                            <img src="./assets/skills/vite.webp" alt="Vite logo" class="skill-icon" width="20" height="20" loading="lazy" />
+                            <span>Vite</span>
+                        </span>
+                        <span class="skill-chip">
+                            <img src="./assets/skills/nextjs.webp" alt="Next.js logo" class="skill-icon skill-icon-nextjs" width="20" height="20" loading="lazy" />
+                            <span>Next.js</span>
+                        </span>
+                        <span class="skill-chip">
+                            <img src="./assets/skills/mui.webp" alt="MUI logo" class="skill-icon" width="20" height="20" loading="lazy" />
+                            <span>MUI</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <span class="material-symbols-outlined skill-category-icon"
+                            style="color: var(--google-yellow);">settings_suggest</span>
+                        <h3 class="skill-category-title font-headline-md">Automation & Backend</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="skill-chip">
+                            <img src="./assets/skills/nodejs.webp" alt="Node.js logo" class="skill-icon" width="20" height="20" loading="lazy" />
+                            <span>Node.js</span>
+                        </span>
+                        <span class="skill-chip">
+                            <img src="./assets/skills/graphql.webp" alt="GraphQL logo" class="skill-icon" width="20" height="20" loading="lazy" />
+                            <span>GraphQL</span>
+                        </span>
+                        <span class="skill-chip">
+                            <img src="./assets/skills/puppeteer.webp" alt="Puppeteer logo" class="skill-icon" width="20" height="20" loading="lazy" />
+                            <span>Puppeteer</span>
+                        </span>
+                        <span class="skill-chip">
+                            <img src="./assets/skills/n8n.webp" alt="N8N logo" class="skill-icon" width="20" height="20" loading="lazy" />
+                            <span>N8N</span>
+                        </span>
+                        <span class="skill-chip">
+                            <img src="./assets/skills/supabase.webp" alt="Supabase logo" class="skill-icon" width="20" height="20" loading="lazy" />
+                            <span>Supabase</span>
+                        </span>
+                        <span class="skill-chip">
+                            <img src="./assets/skills/mongodb.webp" alt="MongoDB logo" class="skill-icon" width="20" height="20" loading="lazy" />
+                            <span>MongoDB</span>
+                        </span>
+                        <span class="skill-chip">
+                            <img src="./assets/skills/make.webp" alt="Make (Integromat) logo" class="skill-icon" width="20" height="20" loading="lazy" />
+                            <span>Make (Integromat)</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer Section -->
     <footer class="footer-section" id="contact">
         <div class="container">
@@ -468,18 +555,13 @@
                 <div class="contact-links">
                     <a class="contact-link" href="https://www.linkedin.com/in/gilberto-santamaria/" target="_blank"
                         rel="noopener noreferrer" aria-label="Gilberto Santamaria's LinkedIn Profile">
-                        <span class="material-symbols-outlined" aria-hidden="true">contact_page</span>
+                        <img src="./assets/icons/linkedin.webp" alt="LinkedIn logo" class="contact-icon" width="22" height="22" loading="lazy" />
                         <span>LinkedIn</span>
                     </a>
                     <a class="contact-link" href="https://github.com/gilex1x" target="_blank" rel="noopener noreferrer"
                         aria-label="Gilberto Santamaria's GitHub Profile">
-                        <span class="material-symbols-outlined" aria-hidden="true">terminal</span>
+                        <img src="./assets/icons/github.webp" alt="GitHub logo" class="contact-icon contact-icon-github" width="22" height="22" loading="lazy" />
                         <span>GitHub</span>
-                    </a>
-                    <a class="contact-link" href="https://twitter.com/zGilbertoS" target="_blank"
-                        rel="noopener noreferrer" aria-label="Gilberto Santamaria's Twitter Profile">
-                        <span class="material-symbols-outlined" aria-hidden="true">alternate_email</span>
-                        <span>Twitter</span>
                     </a>
                 </div>
             </div>
@@ -491,48 +573,197 @@
                         aria-label="GitHub Profile">GitHub</a>
                     <a href="https://www.linkedin.com/in/gilberto-santamaria/" target="_blank" rel="noopener noreferrer"
                         aria-label="LinkedIn Profile">LinkedIn</a>
-                    <a href="https://twitter.com/zGilbertoS" target="_blank" rel="noopener noreferrer"
-                        aria-label="Twitter Profile">Twitter</a>
                 </div>
             </div>
         </div>
     </footer>
 
     <script>
-        // Typing Animation Logic
-        const phrases = ["Frontend & Fullstack Developer", "React & Redux Architect", "Automation Expert", "Semantic HTML Enthusiast"];
-        let currentPhraseIndex = 0;
-        let currentCharIndex = 0;
-        let isDeleting = false;
-        const typingTextElement = document.getElementById('typing-text');
+        // Search Bar Suggestions Logic
+        const searchContainer = document.getElementById('search-container');
+        const searchBar = document.getElementById('search-bar');
+        const searchInput = document.getElementById('search-input');
+        const searchClear = document.getElementById('search-clear');
+        const searchSuggestions = document.getElementById('search-suggestions');
 
-        function type() {
-            const currentPhrase = phrases[currentPhraseIndex];
+        const suggestionsData = [
+            { text: "Frontend & Fullstack Developer", target: "#experience", tag: "Role" },
+            { text: "React & Redux Architect", target: "#projects", tag: "Projects" },
+            { text: "Automation Expert", target: "#experience", tag: "Automation" },
+            { text: "Semantic HTML Enthusiast", target: "#skills", tag: "Skills" }
+        ];
 
-            if (isDeleting) {
-                typingTextElement.textContent = currentPhrase.substring(0, currentCharIndex - 1);
-                currentCharIndex--;
+        let activeSuggestionIndex = -1;
+
+        function renderSuggestions(query = "") {
+            const trimmed = query.trim().toLowerCase();
+            const filtered = trimmed === "" 
+                ? suggestionsData 
+                : suggestionsData.filter(item => item.text.toLowerCase().includes(trimmed));
+
+            searchSuggestions.innerHTML = "";
+            activeSuggestionIndex = -1;
+
+            if (filtered.length === 0) {
+                const emptyItem = document.createElement('li');
+                emptyItem.className = 'suggestion-item';
+                emptyItem.style.cursor = 'default';
+                emptyItem.style.color = 'var(--text-tertiary)';
+                emptyItem.innerHTML = `
+                    <span class="suggestion-icon">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="7"></circle>
+                            <line x1="21" y1="21" x2="16" y2="16"></line>
+                        </svg>
+                    </span>
+                    <span class="suggestion-text">No matches found for "${escapeHtml(trimmed)}"</span>
+                `;
+                searchSuggestions.appendChild(emptyItem);
             } else {
-                typingTextElement.textContent = currentPhrase.substring(0, currentCharIndex + 1);
-                currentCharIndex++;
+                filtered.forEach((item, index) => {
+                    const li = document.createElement('li');
+                    li.className = 'suggestion-item';
+                    li.setAttribute('role', 'option');
+                    li.dataset.target = item.target;
+                    li.dataset.text = item.text;
+
+                    // Highlight matched part
+                    let displayText = item.text;
+                    if (trimmed) {
+                        const regex = new RegExp(`(${escapeRegExp(trimmed)})`, 'gi');
+                        displayText = item.text.replace(regex, '<strong>$1</strong>');
+                    }
+
+                    li.innerHTML = `
+                        <span class="suggestion-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="7"></circle>
+                                <line x1="21" y1="21" x2="16" y2="16"></line>
+                            </svg>
+                        </span>
+                        <span class="suggestion-text">${displayText}</span>
+                        <span class="suggestion-badge">${item.tag}</span>
+                    `;
+
+                    li.addEventListener('mousedown', (e) => {
+                        e.preventDefault(); // Prevent input blur before click
+                        selectSuggestion(item);
+                    });
+
+                    searchSuggestions.appendChild(li);
+                });
             }
 
-            let typeSpeed = isDeleting ? 50 : 100;
-
-            if (!isDeleting && currentCharIndex === currentPhrase.length) {
-                typeSpeed = 2000; // Pause at end of phrase
-                isDeleting = true;
-            } else if (isDeleting && currentCharIndex === 0) {
-                isDeleting = false;
-                currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
-                typeSpeed = 500; // Pause before typing new phrase
-            }
-
-            setTimeout(type, typeSpeed);
+            openSuggestions();
         }
 
-        // Start typing animation
-        setTimeout(type, 1000);
+        function openSuggestions() {
+            searchSuggestions.style.display = 'block';
+            searchContainer.classList.add('has-suggestions');
+            searchInput.setAttribute('aria-expanded', 'true');
+        }
+
+        function closeSuggestions() {
+            searchSuggestions.style.display = 'none';
+            searchContainer.classList.remove('has-suggestions');
+            searchInput.setAttribute('aria-expanded', 'false');
+            activeSuggestionIndex = -1;
+        }
+
+        function selectSuggestion(item) {
+            searchInput.value = item.text;
+            searchClear.style.display = 'flex';
+            closeSuggestions();
+
+            if (item.target) {
+                const targetElem = document.querySelector(item.target);
+                if (targetElem) {
+                    targetElem.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        }
+
+        function escapeHtml(str) {
+            return str.replace(/[&<>'"]/g, tag => ({
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                "'": '&#39;',
+                '"': '&quot;'
+            }[tag] || tag));
+        }
+
+        function escapeRegExp(string) {
+            return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        }
+
+        searchInput.addEventListener('focus', () => {
+            renderSuggestions(searchInput.value);
+        });
+
+        searchInput.addEventListener('click', () => {
+            renderSuggestions(searchInput.value);
+        });
+
+        searchInput.addEventListener('input', () => {
+            searchClear.style.display = searchInput.value.length > 0 ? 'flex' : 'none';
+            renderSuggestions(searchInput.value);
+        });
+
+        searchClear.addEventListener('click', () => {
+            searchInput.value = '';
+            searchClear.style.display = 'none';
+            searchInput.focus();
+            renderSuggestions('');
+        });
+
+        // Keyboard navigation
+        searchInput.addEventListener('keydown', (e) => {
+            const items = searchSuggestions.querySelectorAll('.suggestion-item[role="option"]');
+            if (!items.length) return;
+
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                activeSuggestionIndex = (activeSuggestionIndex + 1) % items.length;
+                updateActiveSuggestion(items);
+            } else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                activeSuggestionIndex = (activeSuggestionIndex - 1 + items.length) % items.length;
+                updateActiveSuggestion(items);
+            } else if (e.key === 'Enter') {
+                e.preventDefault();
+                if (activeSuggestionIndex >= 0 && items[activeSuggestionIndex]) {
+                    const text = items[activeSuggestionIndex].dataset.text;
+                    const target = items[activeSuggestionIndex].dataset.target;
+                    selectSuggestion({ text, target });
+                } else if (items.length > 0) {
+                    const text = items[0].dataset.text;
+                    const target = items[0].dataset.target;
+                    selectSuggestion({ text, target });
+                }
+            } else if (e.key === 'Escape') {
+                closeSuggestions();
+            }
+        });
+
+        function updateActiveSuggestion(items) {
+            items.forEach((item, idx) => {
+                if (idx === activeSuggestionIndex) {
+                    item.classList.add('selected');
+                    item.scrollIntoView({ block: 'nearest' });
+                    searchInput.value = item.dataset.text;
+                } else {
+                    item.classList.remove('selected');
+                }
+            });
+        }
+
+        // Close when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!searchContainer.contains(e.target)) {
+                closeSuggestions();
+            }
+        });
 
         // Theme Toggle Logic
         const themeToggle = document.getElementById('theme-toggle');
